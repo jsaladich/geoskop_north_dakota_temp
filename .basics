@@ -1,0 +1,6 @@
+Publish in mybinder
+ - Go to *https://mybinder.org/*
+ - Select *Gitlab.com* and type main URL (*https://gitlab.com/joan.saladich/study_cases*) which must be open to public
+ - Git ref (branch, tag, or commit): *master*
+ - Path to a notebook file (optional): *volia/render/study_case.ipynb* and select *URL*
+ - Launch and copy to README.md the binder badge

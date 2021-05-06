@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<head>    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_09ebedf722df4bd887608888fa7f641d {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+            </style>
+        
+</head>
+<body>    
+    
+            <div class="folium-map" id="map_09ebedf722df4bd887608888fa7f641d" ></div>
+        
+</body>
+<script>    
+    
+            var map_09ebedf722df4bd887608888fa7f641d = L.map(
+                "map_09ebedf722df4bd887608888fa7f641d",
+                {
+                    center: [47.0, -100.0],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 6,
+                    zoomControl: true,
+                    preferCanvas: false,
+                    scrollWheelZoom: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_9f15b4942ab8459789436c1f0bf58886 = L.tileLayer(
+                "https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "Data by \u0026copy; \u003ca href=\"http://openstreetmap.org\"\u003eOpenStreetMap\u003c/a\u003e, under \u003ca href=\"http://www.openstreetmap.org/copyright\"\u003eODbL\u003c/a\u003e.", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_09ebedf722df4bd887608888fa7f641d);
+        
+    
+            var marker_8be1ac4ea43e445fa1e46634e9a986a7 = L.marker(
+                [46.358, -104.25],
+                {"radius": 8}
+            ).addTo(map_09ebedf722df4bd887608888fa7f641d);
+        
+    
+        var custom_icon_dc990cb9ae0e463ca692413a5265ad7d = L.icon({"iconSize": [40, 40], "iconUrl": "https://cdn1.iconfinder.com/data/icons/weather-713/32/Weather_forecast_weather_station_radar-512.png"});
+        marker_8be1ac4ea43e445fa1e46634e9a986a7.setIcon(custom_icon_dc990cb9ae0e463ca692413a5265ad7d);
+        
+    
+        var popup_c0b0be4c30914c939a31c6b9755167bb = L.popup({"maxWidth": "100%"});
+
+        
+            var html_9d042d74eaec487382bc341e460ce7ab = $(`<div id="html_9d042d74eaec487382bc341e460ce7ab" style="width: 100.0%; height: 100.0%;"><i>WBAN:94055</i></div>`)[0];
+            popup_c0b0be4c30914c939a31c6b9755167bb.setContent(html_9d042d74eaec487382bc341e460ce7ab);
+        
+
+        marker_8be1ac4ea43e445fa1e46634e9a986a7.bindPopup(popup_c0b0be4c30914c939a31c6b9755167bb)
+        ;
+
+        
+    
+    
+            marker_8be1ac4ea43e445fa1e46634e9a986a7.bindTooltip(
+                `<div>
+                     NOAA Station on click
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_b287eb5a769c45d5bcae5d333667c707 = L.marker(
+                [48.48, -99.236],
+                {"radius": 8}
+            ).addTo(map_09ebedf722df4bd887608888fa7f641d);
+        
+    
+        var custom_icon_e224297d9d33494f8b7e8d46037049f3 = L.icon({"iconSize": [40, 40], "iconUrl": "https://cdn1.iconfinder.com/data/icons/weather-713/32/Weather_forecast_weather_station_radar-512.png"});
+        marker_b287eb5a769c45d5bcae5d333667c707.setIcon(custom_icon_e224297d9d33494f8b7e8d46037049f3);
+        
+    
+        var popup_a99ef86a2e134b18b747e8fd1b649320 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_d033948f052e4332a47579d98f4d3c47 = $(`<div id="html_d033948f052e4332a47579d98f4d3c47" style="width: 100.0%; height: 100.0%;"><i>WBAN:00285</i></div>`)[0];
+            popup_a99ef86a2e134b18b747e8fd1b649320.setContent(html_d033948f052e4332a47579d98f4d3c47);
+        
+
+        marker_b287eb5a769c45d5bcae5d333667c707.bindPopup(popup_a99ef86a2e134b18b747e8fd1b649320)
+        ;
+
+        
+    
+    
+            marker_b287eb5a769c45d5bcae5d333667c707.bindTooltip(
+                `<div>
+                     NOAA Station on click
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_8a109fffc6c745ca984099c18788afa1 = L.marker(
+                [46.7825, -100.757],
+                {"radius": 8}
+            ).addTo(map_09ebedf722df4bd887608888fa7f641d);
+        
+    
+        var custom_icon_57c85f7dd17f467ca036333512a605d8 = L.icon({"iconSize": [40, 40], "iconUrl": "https://cdn1.iconfinder.com/data/icons/weather-713/32/Weather_forecast_weather_station_radar-512.png"});
+        marker_8a109fffc6c745ca984099c18788afa1.setIcon(custom_icon_57c85f7dd17f467ca036333512a605d8);
+        
+    
+        var popup_31edf0b569dd4c8194421fa8486fcb02 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_c9167c2a1624430996f948924849b4e9 = $(`<div id="html_c9167c2a1624430996f948924849b4e9" style="width: 100.0%; height: 100.0%;"><i>WBAN:24011</i></div>`)[0];
+            popup_31edf0b569dd4c8194421fa8486fcb02.setContent(html_c9167c2a1624430996f948924849b4e9);
+        
+
+        marker_8a109fffc6c745ca984099c18788afa1.bindPopup(popup_31edf0b569dd4c8194421fa8486fcb02)
+        ;
+
+        
+    
+    
+            marker_8a109fffc6c745ca984099c18788afa1.bindTooltip(
+                `<div>
+                     NOAA Station on click
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_fd66657314d24ebdb8638884ca694d51 = L.marker(
+                [48.4167, -101.35],
+                {"radius": 8}
+            ).addTo(map_09ebedf722df4bd887608888fa7f641d);
+        
+    
+        var custom_icon_29b535f543e544f59a335c1e91fcb586 = L.icon({"iconSize": [40, 40], "iconUrl": "https://cdn1.iconfinder.com/data/icons/weather-713/32/Weather_forecast_weather_station_radar-512.png"});
+        marker_fd66657314d24ebdb8638884ca694d51.setIcon(custom_icon_29b535f543e544f59a335c1e91fcb586);
+        
+    
+        var popup_4d41b3abd0e3440e92d0f956ce81f675 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_985025b3865e4486a25edd37fbc339ec = $(`<div id="html_985025b3865e4486a25edd37fbc339ec" style="width: 100.0%; height: 100.0%;"><i>WBAN:94011</i></div>`)[0];
+            popup_4d41b3abd0e3440e92d0f956ce81f675.setContent(html_985025b3865e4486a25edd37fbc339ec);
+        
+
+        marker_fd66657314d24ebdb8638884ca694d51.bindPopup(popup_4d41b3abd0e3440e92d0f956ce81f675)
+        ;
+
+        
+    
+    
+            marker_fd66657314d24ebdb8638884ca694d51.bindTooltip(
+                `<div>
+                     NOAA Station on click
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_42f2485b32df46b4bbd71f08fe60485a = L.marker(
+                [46.167, -98.083],
+                {"radius": 8}
+            ).addTo(map_09ebedf722df4bd887608888fa7f641d);
+        
+    
+        var custom_icon_f1bd618cbdd84c858a8a5cdfdb5163a4 = L.icon({"iconSize": [40, 40], "iconUrl": "https://cdn1.iconfinder.com/data/icons/weather-713/32/Weather_forecast_weather_station_radar-512.png"});
+        marker_42f2485b32df46b4bbd71f08fe60485a.setIcon(custom_icon_f1bd618cbdd84c858a8a5cdfdb5163a4);
+        
+    
+        var popup_c1914e33d6b04c9592e87e84919b2125 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_eefc0116455d40da859d0f87cf91eb9b = $(`<div id="html_eefc0116455d40da859d0f87cf91eb9b" style="width: 100.0%; height: 100.0%;"><i>WBAN:00321</i></div>`)[0];
+            popup_c1914e33d6b04c9592e87e84919b2125.setContent(html_eefc0116455d40da859d0f87cf91eb9b);
+        
+
+        marker_42f2485b32df46b4bbd71f08fe60485a.bindPopup(popup_c1914e33d6b04c9592e87e84919b2125)
+        ;
+
+        
+    
+    
+            marker_42f2485b32df46b4bbd71f08fe60485a.bindTooltip(
+                `<div>
+                     NOAA Station on click
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_5b9ecc41428d4cf783d7a618a0e50c55 = L.marker(
+                [48.941, -97.903],
+                {"radius": 8}
+            ).addTo(map_09ebedf722df4bd887608888fa7f641d);
+        
+    
+        var custom_icon_57047e3c510c4f59b10f2fd1cbdee536 = L.icon({"iconSize": [40, 40], "iconUrl": "https://cdn1.iconfinder.com/data/icons/weather-713/32/Weather_forecast_weather_station_radar-512.png"});
+        marker_5b9ecc41428d4cf783d7a618a0e50c55.setIcon(custom_icon_57047e3c510c4f59b10f2fd1cbdee536);
+        
+    
+        var popup_d38aa2700dd446d19605d23cb7042e8d = L.popup({"maxWidth": "100%"});
+
+        
+            var html_7e3b7844188c472d921d1027993303c2 = $(`<div id="html_7e3b7844188c472d921d1027993303c2" style="width: 100.0%; height: 100.0%;"><i>WBAN:00368</i></div>`)[0];
+            popup_d38aa2700dd446d19605d23cb7042e8d.setContent(html_7e3b7844188c472d921d1027993303c2);
+        
+
+        marker_5b9ecc41428d4cf783d7a618a0e50c55.bindPopup(popup_d38aa2700dd446d19605d23cb7042e8d)
+        ;
+
+        
+    
+    
+            marker_5b9ecc41428d4cf783d7a618a0e50c55.bindTooltip(
+                `<div>
+                     NOAA Station on click
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var feature_group_1cd4dd920ab449d7ba0127a0cdcbd094 = L.featureGroup(
+                {}
+            ).addTo(map_09ebedf722df4bd887608888fa7f641d);
+        
+    
+            var rectangle_1a151b56f493414fa412d95677fcc026 = L.rectangle(
+                [[48.9, -102.4], [48.9, -96.9], [47.64, -96.9], [47.64, -102.4]],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#43d9de", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(feature_group_1cd4dd920ab449d7ba0127a0cdcbd094);
+        
+    
+            rectangle_1a151b56f493414fa412d95677fcc026.bindTooltip(
+                `<div>
+                     Area of Analysis
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var layer_control_dc98b4e835494ea1a0bdc26fab3135ff = {
+                base_layers : {
+                    "Legend" : tile_layer_9f15b4942ab8459789436c1f0bf58886,
+                },
+                overlays :  {
+                    "Area of Interest" : feature_group_1cd4dd920ab449d7ba0127a0cdcbd094,
+                },
+            };
+            L.control.layers(
+                layer_control_dc98b4e835494ea1a0bdc26fab3135ff.base_layers,
+                layer_control_dc98b4e835494ea1a0bdc26fab3135ff.overlays,
+                {"autoZIndex": true, "collapsed": false, "position": "topleft"}
+            ).addTo(map_09ebedf722df4bd887608888fa7f641d);
+        
+</script>
